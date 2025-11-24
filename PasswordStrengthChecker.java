@@ -12,7 +12,7 @@ public class PasswordStrengthChecker {
         if (length && upper && lower && digit && special) {
             return true;
         } else {
-            System.out.println("❌ Weak Password. Please improve the following:");
+            System.out.println(" Weak Password. Please improve the following:");
             if (!length) System.out.println("- Minimum 8 characters required");
             if (!upper) System.out.println("- Include at least one uppercase letter");
             if (!lower) System.out.println("- Include at least one lowercase letter");
@@ -27,8 +27,9 @@ public class PasswordStrengthChecker {
         System.out.print("Enter your password: ");
         String password = sc.nextLine();
         if (isStrongPassword(password)) {
-            System.out.println("✅ Strong Password!");
+            System.out.println("Strong Password!");
         }
         sc.close();
     }
 }
+
